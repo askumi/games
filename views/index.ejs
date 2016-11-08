@@ -1,0 +1,9 @@
+<% include partials/header.ejs %>
+	<h1><%= title %></h1>
+	<% if(user) { %>
+		<p>Welcome, <%=user.username%>.</p>
+	<% } else { %>
+		<p>Welcome.</p>
+	<% } %>
+	<p><%= message %></p>
+<% include partials/footer.ejs %>
